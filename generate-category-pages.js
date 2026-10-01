@@ -45,6 +45,14 @@ const people = [
   { id: 'donna-birkett-baida', name: 'Donna Birkett Baida', role: 'Marketing', cat: 'tecnica', photo: 'img/donna-birkett-baida.jpg', pos: 'center 20%', blurb: 'Diretora de marketing atual da Fórmula 1.' },
   { id: 'burcu-cetinkaya', name: 'Burcu Çetinkaya', role: 'Gestão', cat: 'rally', photo: 'img/burcu-cetinkaya.jpg', pos: 'center 20%', blurb: 'Preside a Comissão de Mulheres no Automobilismo da FIA.' },
   { id: 'claire-williams', name: 'Claire Williams', role: 'Gestão', cat: 'tecnica', photo: 'img/claire-williams.webp', pos: 'center 20%', blurb: 'Comandou a equipe Williams de F1 por anos, uma das poucas mulheres a liderar um time no grid.' },
+  { id: 'enni-malkonen', name: 'Enni Mälkönen', role: 'Rally', cat: 'rally', blurb: 'Finlandesa, única copiloto mulher na categoria Rally1 do WRC em 2026, campeã da WRC2 em 2024.' },
+  { id: 'sarah-rumeau', name: 'Sarah Rumeau', role: 'Rally', cat: 'rally', blurb: 'Francesa, disputa a WRC2 numa dupla 100% feminina ao lado da copiloto Julie Amblard.' },
+  { id: 'julie-amblard', name: 'Julie Amblard', role: 'Rally', cat: 'rally', blurb: 'Copiloto francesa, forma com Sarah Rumeau uma das únicas duplas 100% femininas da WRC2.' },
+  { id: 'ilka-minor', name: 'Ilka Minor', role: 'Rally', cat: 'rally', blurb: 'Copiloto austríaca com longa trajetória ativa no WRC.' },
+  { id: 'lilou-wadoux', name: 'Lilou Wadoux', role: 'Endurance', cat: 'endurance', blurb: 'Francesa, piloto da Ferrari no GT World Challenge Europe em 2026, venceu o IMSA Michelin Endurance Cup em 2025.' },
+  { id: 'emmie-jones', name: 'Emmie Jones', role: 'Mecânica', cat: 'tecnica', blurb: 'Primeira mulher mecânica da Red Bull Racing na F1, começou na Mercedes em 2018.' },
+  { id: 'ruth-buscombe', name: 'Ruth Buscombe', role: 'Estratégia', cat: 'tecnica', blurb: 'Engenheira de estratégia sênior da Sauber na F1.' },
+  { id: 'monisha-kaltenborn', name: 'Monisha Kaltenborn', role: 'Gestão', cat: 'tecnica', blurb: 'Primeira mulher a ser chefe de equipe na Fórmula 1, liderou a Sauber entre 2010 e 2017.' },
 ];
 
 const categories = [
