@@ -66,14 +66,14 @@
       <div class="container">
         <div class="section-heading split">
           <div>
-            <p class="eyebrow pink">ELAS FAZEM A DIFERENÇA</p>
+            <p class="eyebrow pink" id="refFilterLabel">ELAS FAZEM A DIFERENÇA</p>
             <h2>Referências em destaque</h2>
           </div>
-          <a class="text-link" href="#">Ver todas as referências →</a>
+          <button class="text-link" id="resetFilter" style="background:none;border:0;display:none;cursor:pointer">Ver todas as referências →</button>
         </div>
 
         <div class="reference-grid">
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="formula">
             <div class="profile-photo" style="background-image:url('img/rafaela-ferreira.jpg');background-size:cover;background-position:center 20%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -84,7 +84,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="kart">
             <div class="profile-photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Maya_Weug_at_Nerdland_Festival_2026.jpg');background-size:cover;background-position:center"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -95,7 +95,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="tecnica">
             <div class="profile-photo" style="background-image:url('img/hannah-schmitz.jpg');background-size:cover;background-position:center 20%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -106,7 +106,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="rally">
             <div class="profile-photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Mich%C3%A8le_Mouton_-_1985_Welsh_Rally_(interview).jpg');background-size:cover;background-position:center"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -117,7 +117,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="formula">
             <div class="profile-photo" style="background-image:url('img/jamie-chadwick.jpg');background-size:cover;background-position:center 15%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -128,7 +128,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="tecnica">
             <div class="profile-photo" style="background-image:url('img/bia-figueiredo.jpg');background-size:cover;background-position:center 15%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -139,7 +139,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="tecnica">
             <div class="profile-photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Susie_Wolff_2022.jpg');background-size:cover;background-position:center"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -150,7 +150,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="endurance">
             <div class="profile-photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Leena_Gade.jpg');background-size:cover;background-position:center"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -161,7 +161,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="tecnica">
             <div class="profile-photo" style="background-image:url('img/naomi-schiff.jpg');background-size:cover;background-position:center 15%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -173,7 +173,7 @@
           </article>
 
           <!-- Aguardando foto (sem licença livre disponível — precisa de foto enviada manualmente) -->
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="tecnica">
             <div class="profile-photo" style="background-image:url('img/laura-muller.jpg');background-size:cover;background-position:center 20%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -184,7 +184,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="formula">
             <div class="profile-photo" style="background-image:url('img/doriane-pin.jpg');background-size:cover;background-position:center 20%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -195,7 +195,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="tecnica">
             <div class="profile-photo" style="background-image:url('img/mariana-becker.jpg');background-size:cover;background-position:center 20%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -206,7 +206,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="tecnica">
             <div class="profile-photo" style="background-image:url('img/julia-guimaraes.jpg');background-size:cover;background-position:center 20%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -217,7 +217,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="tecnica">
             <div class="profile-photo" style="background-image:url('img/ellie-norman.jpg');background-size:cover;background-position:center 20%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -228,7 +228,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="tecnica">
             <div class="profile-photo" style="background-image:url('img/donna-birkett-baida.jpg');background-size:cover;background-position:center 20%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -239,7 +239,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="rally">
             <div class="profile-photo" style="background-image:url('img/burcu-cetinkaya.jpg');background-size:cover;background-position:center 20%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -250,7 +250,7 @@
             </div>
           </article>
 
-          <article class="profile-card reveal">
+          <article class="profile-card reveal" data-cat="tecnica">
             <div class="profile-photo" style="background-image:url('img/claire-williams.webp');background-size:cover;background-position:center 20%"></div>
             <div class="profile-gradient"></div>
             <div class="profile-content">
@@ -275,11 +275,11 @@
         </div>
 
         <div class="category-grid">
-          <article class="category-card"><div class="cat-photo placeholder-photo"><span>Kart</span></div><div><h3>Kart</h3><p>Primeiros passos, grandes sonhos.</p></div></article>
-          <article class="category-card"><div class="cat-photo placeholder-photo"><span>Fórmula</span></div><div><h3>Fórmula</h3><p>Alta performance e grandes desafios.</p></div></article>
-          <article class="category-card"><div class="cat-photo placeholder-photo"><span>Rally</span></div><div><h3>Rally</h3><p>Coragem em qualquer terreno.</p></div></article>
-          <article class="category-card"><div class="cat-photo placeholder-photo"><span>Endurance</span></div><div><h3>Endurance</h3><p>Resistência que inspira.</p></div></article>
-          <article class="category-card"><div class="cat-photo placeholder-photo"><span>Técnica</span></div><div><h3>Bastidores & Técnica</h3><p>Talento que move o esporte.</p></div></article>
+          <button class="category-card" data-cat-filter="kart"><h3>Kart</h3><p>Primeiros passos, grandes sonhos.</p><span class="cat-count"></span></button>
+          <button class="category-card" data-cat-filter="formula"><h3>Fórmula</h3><p>Alta performance e grandes desafios.</p><span class="cat-count"></span></button>
+          <button class="category-card" data-cat-filter="rally"><h3>Rally</h3><p>Coragem em qualquer terreno.</p><span class="cat-count"></span></button>
+          <button class="category-card" data-cat-filter="endurance"><h3>Endurance</h3><p>Resistência que inspira.</p><span class="cat-count"></span></button>
+          <button class="category-card" data-cat-filter="tecnica"><h3>Bastidores & Técnica</h3><p>Talento que move o esporte.</p><span class="cat-count"></span></button>
         </div>
       </div>
     </section>
