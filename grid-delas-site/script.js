@@ -24,15 +24,6 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Show how many references exist per category, right on each category card
-// (only runs on the homepage — category pages don't have .profile-card[data-cat]).
-document.querySelectorAll('.category-card').forEach(link => {
-  const cat = link.dataset.cat;
-  const count = document.querySelectorAll(`.profile-card[data-cat="${cat}"]`).length;
-  const countEl = link.querySelector('.cat-count');
-  if (countEl) countEl.textContent = `${count} referência${count === 1 ? '' : 's'}`;
-});
-
 const form = document.querySelector('#newsletterForm');
 const message = document.querySelector('#newsletterMessage');
 form?.addEventListener('submit', event => {
