@@ -24,46 +24,14 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-const catNames = {
-  kart: 'Kart',
-  formula: 'Fórmula',
-  rally: 'Rally',
-  endurance: 'Endurance',
-  tecnica: 'Bastidores & Técnica',
-};
-
-const profileCards = document.querySelectorAll('.profile-card');
-const refFilterLabel = document.querySelector('#refFilterLabel');
-const resetFilter = document.querySelector('#resetFilter');
-
-// Show how many references exist per category, right on each category button.
-document.querySelectorAll('.category-card').forEach(btn => {
-  const cat = btn.dataset.catFilter;
+// Show how many references exist per category, right on each category card
+// (only runs on the homepage — category pages don't have .profile-card[data-cat]).
+document.querySelectorAll('.category-card').forEach(link => {
+  const cat = link.dataset.cat;
   const count = document.querySelectorAll(`.profile-card[data-cat="${cat}"]`).length;
-  const countEl = btn.querySelector('.cat-count');
+  const countEl = link.querySelector('.cat-count');
   if (countEl) countEl.textContent = `${count} referência${count === 1 ? '' : 's'}`;
 });
-
-function applyFilter(cat) {
-  profileCards.forEach(card => {
-    card.style.display = card.dataset.cat === cat ? '' : 'none';
-  });
-  refFilterLabel.textContent = `MODALIDADE · ${catNames[cat] || cat}`;
-  resetFilter.style.display = 'inline-block';
-  document.querySelector('#referencias').scrollIntoView({ behavior: 'smooth' });
-}
-
-function clearFilter() {
-  profileCards.forEach(card => { card.style.display = ''; });
-  refFilterLabel.textContent = 'ELAS FAZEM A DIFERENÇA';
-  resetFilter.style.display = 'none';
-}
-
-document.querySelectorAll('.category-card').forEach(btn => {
-  btn.addEventListener('click', () => applyFilter(btn.dataset.catFilter));
-});
-
-resetFilter?.addEventListener('click', clearFilter);
 
 const form = document.querySelector('#newsletterForm');
 const message = document.querySelector('#newsletterMessage');
