@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "grid-delas-static",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "serve", "grid-delas-site", "-l", "3002"],
+      "port": 3002
+    }
+  ]
+}
