@@ -6,6 +6,13 @@ const DIR = path.join(__dirname, 'grid-delas-site');
 const people = [
   { id: 'rafaela-ferreira', name: 'Rafaela Ferreira', role: 'Pilota', cat: 'formula', photo: 'img/rafaela-ferreira.jpg', pos: 'center 20%', blurb: 'Piloto da F1 Academy pela Campos Racing, primeira mulher a vencer na F4 Brasil.' },
   { id: 'maya-weug', name: 'Maya Weug', role: 'Kart / Fórmula', cat: 'kart', photo: "https://commons.wikimedia.org/wiki/Special:FilePath/Maya_Weug_at_Nerdland_Festival_2026.jpg", pos: 'center', blurb: 'Primeira mulher na Academia de Pilotos da Ferrari, veio do kart até a Fórmula 4.' },
+  { id: 'alba-larsen', name: 'Alba Larsen', role: 'Kart', cat: 'kart', blurb: 'Piloto dinamarquesa de 17 anos, venceu o FIA Girls on Track Rising Stars e é mentorada por Kevin Magnussen.' },
+  { id: 'nina-gademan', name: 'Nina Gademan', role: 'Kart / Fórmula', cat: 'kart', blurb: 'Piloto holandesa, começou no kart em 2018 e hoje corre na F1 Academy 2026 pela Alpine/Prema.' },
+  { id: 'payton-westcott', name: 'Payton Westcott', role: 'Kart', cat: 'kart', blurb: 'Americana, pilota de kart desde os 6 anos, hoje no programa Champions of the Future.' },
+  { id: 'marcela-assumpcao', name: 'Marcela Assumpção', role: 'Kart', cat: 'kart', blurb: 'Um dos grandes nomes do kart brasileiro, com patrocínio milionário da Thunder Racing para 2026.' },
+  { id: 'antonella-bassani', name: 'Antonella Bassani', role: 'Kart', cat: 'kart', blurb: 'Piloto brasileira de 15 anos, selecionada duas vezes seguidas para a seletiva europeia do FIA Girls on Track.' },
+  { id: 'anna-luiza-pimpao', name: 'Anna Luiza Pimpão', role: 'Kart', cat: 'kart', blurb: 'Piloto brasileira de 14 anos, campeã da categoria Júnior na Seletiva de Kart FIA Girls on Track.' },
+  { id: 'manu-clauset', name: 'Manu Clauset', role: 'Kart', cat: 'kart', blurb: 'Líder da categoria feminina na Copa Hyundai HB20, com raízes no kart brasileiro.' },
   { id: 'hannah-schmitz', name: 'Hannah Schmitz', role: 'Engenharia', cat: 'tecnica', photo: 'img/hannah-schmitz.jpg', pos: 'center 20%', blurb: 'Chefe de estratégia da Red Bull Racing, primeira mulher a vencer o prêmio de Estrategista do Ano da F1.' },
   { id: 'michele-mouton', name: 'Michèle Mouton', role: 'Rally', cat: 'rally', photo: "https://commons.wikimedia.org/wiki/Special:FilePath/Mich%C3%A8le_Mouton_-_1985_Welsh_Rally_(interview).jpg", pos: 'center', blurb: 'Única mulher a vencer uma prova do Mundial de Rali (WRC), hoje dirigente esportiva na FIA.' },
   { id: 'jamie-chadwick', name: 'Jamie Chadwick', role: 'Pilota', cat: 'formula', photo: 'img/jamie-chadwick.jpg', pos: 'center 15%', blurb: 'Tricampeã da W Series, uma das pilotas mais vitoriosas da história do automobilismo feminino.' },
@@ -32,14 +39,10 @@ const categories = [
 ];
 
 function cardHtml(p) {
-  return `          <article class="profile-card reveal">
-            <div class="profile-photo" style="background-image:url('${p.photo}');background-size:cover;background-position:${p.pos}"></div>
-            <div class="profile-gradient"></div>
-            <div class="profile-content">
-              <h3>${p.name}</h3>
-              <p class="role">${p.role}</p>
-              <p>${p.blurb}</p>
-            </div>
+  return `          <article class="list-card reveal">
+            <h3>${p.name}</h3>
+            <p class="role">${p.role}</p>
+            <p>${p.blurb}</p>
           </article>`;
 }
 
@@ -87,7 +90,7 @@ function pageHtml(cat) {
           <p class="section-intro">${cat.desc}</p>
         </div>
 
-        <div class="reference-grid">
+        <div class="list-grid">
 ${list.map(cardHtml).join('\n\n')}
         </div>
       </div>
